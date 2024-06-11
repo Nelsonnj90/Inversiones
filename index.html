@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones Digitales</title>
+    <style>
+        /* Estilos para el video de fondo */
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+
+        /* Resto de los estilos */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        /* Estilos para los cuadros con imágenes */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-box {
+            width: 300px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+        /* Estilos para el consejo */
+        .advice {
+            margin-top: 20px;
+            text-align: left;
+            padding: 0 10%;
+        }
+        /* Estilos para la columna de imágenes */
+        .column-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-box-wide {
+            width: 300px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-box-wide img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            margin-left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            width: 600px; /* Aumentar el ancho de las descripciones */
+            text-align: left;
+            color: #fff;
+        }
+        .item-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        /* Estilos para los puntos de importancia de invertir */
+        .importance-container {
+            margin-top: 20px;
+        }
+        .importance-item {
+            margin: 20px 0;
+        }
+        .importance-item h3 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+            color: #fff;
+        }
+        .importance-item img {
+            width: 300px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        /* Animaciones */
+        .animate {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate.animate-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop>
+        <source src="C:\Users\Nelson\Downloads\204306-923909642.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        Inversiones Digitales
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="mis_inversiones.html">Mis Inversiones</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <h2>Bienvenidos</h2>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_3_2024-06-09_18-29-13.jpg" alt="Imagen 1" class="animate">
+            </div>
+            <div class="image-box">
+                <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_6_2024-06-09_18-29-13.jpg" alt="Imagen 2" class="animate">
+            </div>
+            <div class="image-box">
+                <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_11_2024-06-09_18-29-13.jpg" alt="Imagen 3" class="animate">
+            </div>
+        </div>
+        <div class="advice animate">
+            <p>
+                En el mundo de las inversiones, la paciencia y la perseverancia son claves. Cada día presenta una nueva oportunidad para aprender y crecer. Recuerda siempre diversificar tus inversiones y nunca poner todos tus huevos en una sola canasta. Investiga, analiza y toma decisiones informadas. No te desanimes por los obstáculos; cada desafío es una lección en el camino hacia el éxito. Invierte en conocimiento, ya que es el mejor activo que puedes tener. Mantén una visión a largo plazo y no te dejes influenciar por las flucttuaciones a corto plazo del mercado. La disciplina y la consistencia te llevarán a alcanzar tus metas financieras. Confía en tu intuición, pero también escucha a los expertos. Rodéate de una comunidad de apoyo que te inspire y motive. Recuerda, el éxito en las inversiones no llega de la noche a la mañana, pero con dedicación y esfuerzo, los resultados valdrán la pena.
+            </p>
+            <p>
+                Los fundadores, Darlis y Nelson, están aquí para impulsarte y ayudarte a alcanzar tus sueños. Con su guía y apoyo, tienes el poder de transformar tus aspiraciones en realidad. ¡Vamos juntos hacia el éxito!
+            </p>
+        </div>
+        <div class="column-container">
+            <div class="item-container">
+                <div class="image-box-wide animate">
+                    <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_10_2024-06-09_18-29-13.jpg" alt="Imagen 4">
+                </div>
+                <div class="description animate">
+                    Esta imagen representa la innovación y el potencial de crecimiento en el mundo de las inversiones digitales. En un entorno donde la tecnología está en constante evolución, es crucial estar al tanto de las oportunidades emergentes y aprovecharlas de manera estratégica. En Darlis & Nelson, nos comprometemos a impulsar y apoyar a todos los inversores en su viaje hacia el éxito financiero.
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="image-box-wide animate">
+                    <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_9_2024-06-09_18-29-13.jpg" alt="Imagen 5">
+                </div>
+                <div class="description animate">
+                    Simbolizamos la fuerza y la resistencia necesarias para enfrentar los desafíos del mercado financiero. En un mundo volátil y cambiante, es fundamental mantener una mentalidad positiva y perseverante. En Darlis & Nelson, creemos en el poder de la determinación y la dedicación para alcanzar tus metas financieras.
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="image-box-wide animate">
+                    <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_8_2024-06-09_18-29-13.jpg" alt="Imagen 6">
+                </div>
+                <div class="description animate">
+                    Representamos la diversidad y la inclusión en el mundo de las inversiones digitales. En un entorno globalizado, es importante reconocer y valorar las diferentes perspectivas y experiencias. En Darlis & Nelson, nos esforzamos por crear un ambiente inclusivo donde todos los inversores se sientan bienvenidos y apoyados.
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="image-box-wide animate">
+                    <img src="C:\Users\Nelson\Downloads\Telegram Desktop\photo_7_2024-06-09_18-29-13.jpg" alt="Imagen 7">
+                </div>
+                <div class="description animate">
+                    Evoquemos el espíritu de colaboración y trabajo en equipo que impulsa el éxito en el mundo financiero. En un mundo interconectado, la colaboración entre inversores, asesores y expertos es esencial para maximizar el potencial de crecimiento y mitigar los riesgos. En Darlis & Nelson, nos enorgullece ser parte de una comunidad de inversores comprometidos con el éxito mutuo.
+                </div>
+            </div>
+        </div>
+        
+        <h2>¿Por qué es importante invertir?</h2>
+        <div class="importance-container">
+            <div class="importance-item animate">
+                <h3>1. Crecimiento del Patrimonio</h3>
+                <p>Invertir te permite hacer crecer tu dinero con el tiempo, superando la inflación y aumentando tu patrimonio.</p>
+                <img src="C:\Users\Nelson\Downloads\Bitcoin Supera los $44K.jpg" alt="Crecimiento del Patrimonio">
+            </div>
+            <div class="importance-item animate">
+                <h3>2. Seguridad Financiera</h3>
+                <p>Una buena estrategia de inversión puede proporcionarte seguridad financiera a largo plazo, asegurando tu bienestar económico en el futuro.</p>
+                <img src="C:\Users\Nelson\Downloads\3d-internet-secuirty-badge.jpg" alt="Seguridad Financiera">
+            </div>
+            <div class="importance-item animate">
+                <h3>3. Diversificación de Ingresos</h3>
+                <p>Invertir te permite diversificar tus fuentes de ingresos, reduciendo el riesgo de depender de una sola fuente.</p>
+                <img src="C:\Users\Nelson\Downloads\Krypto CFDs oder echte Kryptowährungen.jpg" alt="Diversificación de Ingresos">
+            </div>
+            <div class="importance-item animate">
+                <h3>4. Logro de Metas Financieras</h3>
+                <p>Las inversiones bien planificadas pueden ayudarte a alcanzar tus metas financieras, como comprar una casa, pagar la educación de tus hijos, o jubilarte cómodamente.</p>
+                <img src="C:\Users\Nelson\Desktop\8-Tips-to-Conduct-Revenue-Performance-Analysis.jpg" alt="Logro de Metas Financieras">
+            </div>
+            <div class="importance-item animate">
+                <h3>5. Contribución al Desarrollo Económico</h3>
+                <p>Invertir en empresas y proyectos contribuye al crecimiento y desarrollo de la economía, generando empleo y promoviendo la innovación.</p>
+                <img src="C:\Users\Nelson\Desktop\abd327205d2be665f6a6e2032d15adc4.jpg" alt="Contribución al Desarrollo Económico">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Darlis & Nelson. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        // JavaScript para animar elementos al desplazarse
+        const animateItems = document.querySelectorAll('.animate');
+
+        function checkAnimation() {
+            animateItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (itemTop < windowHeight * 0.8) {
+                    item.classList.add('animate-visible');
+                }                else {
+                    item.classList.remove('animate-visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkAnimation);
+        window.addEventListener('resize', checkAnimation);
+        checkAnimation(); // Ejecutar la función una vez al cargar la página
+    </script>
+
+</body>
+</html>
+
